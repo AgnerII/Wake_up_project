@@ -12,11 +12,20 @@ class CalculatorTest {
     }
     @Test
     void testAdd(){
-        assertEquals(10,calculator.add(6,4));
+        assertEquals(100,calculator.add(64,36));
     }
     @RepeatedTest(1)
     void testAddWithNegative(){
         assertEquals(7,calculator.add(-5,12));
     }
 
+    @Test
+    void testMultiply(){
+        assertEquals(20,calculator.multiply(4,5));
+    }
+    @RepeatedTest(2)
+    void testMultiplyWithZero() {
+        assertEquals(0, calculator.multiply(7, 0));
+        assertEquals(0,calculator.multiply(0,7));
+    }
 }
