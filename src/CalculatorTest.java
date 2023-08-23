@@ -19,6 +19,8 @@ class CalculatorTest {
         assertEquals(7,calculator.add(-5,12));
     }
 
+    void testSubtract(){assertEquals(-14,calculator.subtract(-7,-7));}
+
     @Test
     void testMultiply(){
         assertEquals(20,calculator.multiply(4,5));
@@ -27,5 +29,9 @@ class CalculatorTest {
     void testMultiplyWithZero() {
         assertEquals(0, calculator.multiply(7, 0));
         assertEquals(0,calculator.multiply(0,7));
+
+    }
+    void testDivide() {
+        assertEquals(8,calculator.divide(32,4));
     }
 }
