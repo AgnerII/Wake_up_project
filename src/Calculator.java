@@ -6,8 +6,18 @@ public class Calculator {
         return result;
     }
 
+    public double subtract(double x, double y){
+        result = x-y;
+        return result;
+    }
+
     public double multiply(double x, double y){
         result = x+y;
         return result;
     }
+     public double divide(double x, double y){
+        result = x/y;
+        return result;
+
+     }
 }
